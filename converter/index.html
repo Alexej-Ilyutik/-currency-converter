@@ -17,7 +17,45 @@
       <header class="header">
         <h1>Currency Converter</h1>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <form class="main__form">
+          <div class="main-date">
+            <label class="main-label" for="date_id">Date</label>
+            <input class="main-text" type="date" id="date_id" name="date_value" required="" min="2022-2-16">
+          </div>
+          <div class="main-amount">
+            <label class="main-label" for="amount">Amount:</label>
+            <input autocomplete="off" class="main-text" type="text" id="amount" />
+            <select class="main-select main-text">
+              <option selected class="main-option main-text" value="BYN">BYN</option>
+              <option class="main-option main-text" value="USD">USD</option>
+              <option class="main-option main-text" value="EUR">EUR</option>
+              <option class="main-option main-text" value="CNY">CNY</option>
+              <option class="main-option main-text" value="RUB">RUB</option>
+            </select>
+          </div>
+          <div class="main-BYN main-text">
+            <label class="main-label" for="BYN">BYN</label>
+            <input autocomplete="off" class="main-text" type="text" id="BYN" />
+          </div>
+          <div class="main-USD main-text">
+            <label class="main-label" for="USD">USD</label>
+            <input autocomplete="off" class="main-text" type="text" id="USD" />
+          </div>
+          <div class="main-EUR main-text">
+            <label class="main-label" for="EUR">EUR</label>
+            <input autocomplete="off" class="main-text" type="text" id="EUR" />
+          </div>
+          <div class="main-CNY main-text">
+            <label class="main-label" for="CNY">CNY</label>
+            <input autocomplete="off" class="main-text" type="text" id="CNY" />
+          </div>
+          <div class="main-RUB main-text">
+            <label class="main-label" for="RUB">RUB</label>
+            <input autocomplete="off" class="main-text" type="text" id="RUB" />
+          </div>
+        </form>
+      </main>
       <footer class="footer">
         <div class="footer-link">
           <img src="assets/github.svg" alt="GitHub" />
