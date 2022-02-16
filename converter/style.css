@@ -1,0 +1,40 @@
+:root {
+  --text-color: #fff;
+  --bg-color: rgba(0, 0, 0, 0.25);
+  --head-and-foot-color: rgb(45, 52, 71);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  scroll-behavior: smooth;
+  color: var(--text-color);
+}
+
+html,
+body {
+height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 500px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;  
+}
+
+
+.header {
+  padding: 15px 0;
+  background-color: var(--head-and-foot-color);
+}
+
+h1 {
+  font-size: 40px;
+ text-align: center;
+}
