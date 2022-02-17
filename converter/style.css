@@ -52,7 +52,7 @@ background-color: var(--bg-color);
  width: 100%;
   max-width: 400px;
   height: 100%;
-  margin: 0 auto 100px auto;
+  margin: 30px auto 100px auto;
   padding: 45px 25px;
   background-color: var(--main-color);
   display: flex;
@@ -80,6 +80,8 @@ background-color: var(--bg-color);
 .main-RUB{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .main-amount input{

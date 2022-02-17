@@ -15,7 +15,6 @@ const RUB_VALUE = document.getElementById('RUB');
 const BOX = document.querySelectorAll('.box');
 let lastIndex = 0;
 let coefficient;
-let rate;
 
 DATE.valueAsDate = new Date();
 
