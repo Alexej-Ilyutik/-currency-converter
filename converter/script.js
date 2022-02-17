@@ -3,6 +3,7 @@ const eur = 2.91;
 const cny = 0.4;
 const rub = 0.03;
 
+const DATE = document.getElementById('date_id');
 const MAIN_SELECT = document.querySelector('.main-select');
 const AMOUNT_VALUE = document.getElementById('amount');
 const BYN_VALUE = document.getElementById('BYN');
@@ -12,6 +13,19 @@ const CNY_VALUE = document.getElementById('CNY');
 const RUB_VALUE = document.getElementById('RUB');
 const BOX = document.querySelectorAll('.box');
 let lastIndex = 0;
+
+DATE.valueAsDate = new Date();
+
+DATE.addEventListener('change', changeDate);
+
+function changeDate() {
+  const date = new Date().getDate();
+  const currentDate = DATE.valueAsDate.getDate();
+  if (currentDate > date) {
+    alert("Error! Choose today's or past date!");
+    DATE.valueAsDate = new Date();
+  }
+}
 
 MAIN_SELECT.addEventListener('change', changeCurrencyValue);
 
